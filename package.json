@@ -1,10 +1,8 @@
 {
-  "name": "simply-dev",
+  "name": "@simply-dev/root",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@nrwl/js": "15.4.4",
     "@nrwl/workspace": "15.4.4",
