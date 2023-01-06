@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Use concurrent false as prettier, eslint, and nx may change the same files. We don't want race conditions
+yarn lint-staged --relative --concurrent false
