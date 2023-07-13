@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@simply-dev/eslint": ["packages/eslint/src/index.ts"]
+      "@simply-dev/eslint-plugin": ["packages/eslint-plugin/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
