@@ -22,10 +22,6 @@ Installation guides vary by package. Each package has its own README.md file you
 
 Run `yarn nx graph` to see a diagram of the dependencies of the projects.
 
-### Plug and Play
-
-The monorepo uses Yarn Berry with Plug n Play (PnP). It doesn't have a `node_modules` directory, nor does it require one. You can learn more about Yarn Berry [here](https://yarnpkg.com/getting-started/migration).
-`
 ## Monorepo Commands
 
 This package uses `yarn workspaces`. You can learn more about workspaces [here](https://yarnpkg.com/features/workspaces).
