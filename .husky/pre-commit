@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+# echo "Checking unused imports..."
+# npx unimported
+echo "Type checking..."
+yarn tsc -p ./tsconfig.base.json --noEmit
+echo "Done!"
+echo "Running lint-staged..."
 # Use concurrent false as prettier, eslint, and nx may change the same files. We don't want race conditions
 yarn lint-staged --relative --concurrent false
