@@ -16,8 +16,7 @@ options.scopes = scopes;
 options.customScope = false;
 options.skipScope = false;
 options.jiraOptional = true;
-options.jiraPrepend = '[';
-options.jiraAppend = ']';
+options.jiraAppend = ':';
 options.maxHeaderWidth = 100;
 
 module.exports = custom(options);
