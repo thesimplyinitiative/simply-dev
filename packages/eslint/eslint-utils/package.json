@@ -1,0 +1,18 @@
+{
+  "name": "@simply-dev/eslint-utils",
+  "version": "0.0.1",
+  "type": "module",
+  "repository": "https://github.com/thesimplyinitiative/simply-dev",
+  "dependencies": {
+    "eslint-define-config": "^2.1.0",
+    "globals": "^13.24.0",
+    "tslib": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "@types/node": "^18.11.18"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.21.0"
+  }
+}

@@ -13,9 +13,22 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@simply-dev/eslint-plugin": ["packages/eslint-plugin/src/index.ts"]
+      "@simply-dev/eslint-config-base": [
+        "packages/eslint/eslint-config-base/src/index.ts"
+      ],
+      "@simply-dev/eslint-config-frontend": [
+        "packages/eslint/eslint-config-frontend/src/index.ts"
+      ],
+      "@simply-dev/eslint-config-nx": [
+        "packages/eslint/eslint-config-nx/src/index.ts"
+      ],
+      "@simply-dev/eslint-utils": ["packages/eslint/eslint-utils/src/index.ts"],
+      "@simply-dev/eslint/eslint-config-backend": [
+        "packages/eslint/eslint-config-backend/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,0 +1,14 @@
+{
+  "name": "@simply-dev/eslint-config-nx",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@eslint/eslintrc": "^3.0.0",
+    "@nrwl/eslint-plugin-nx": "^15.4.5",
+    "@simply-dev/eslint-utils": "workspace:*",
+    "@typescript-eslint/parser": "^5.29.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.56.0"
+  }
+}

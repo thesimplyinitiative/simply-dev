@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-nx",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/eslint/eslint-config-nx/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/eslint-config-nx",
+        "main": "packages/eslint/eslint-config-nx/src/index.ts",
+        "tsConfig": "packages/eslint/eslint-config-nx/tsconfig.lib.json",
+        "assets": ["packages/eslint/eslint-config-nx/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/eslint/eslint-config-nx/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

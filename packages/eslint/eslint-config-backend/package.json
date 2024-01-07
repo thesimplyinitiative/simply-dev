@@ -1,0 +1,13 @@
+{
+  "name": "@simply-dev/eslint-config-backend",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@simply-dev/eslint-config-base": "workspace:*",
+    "@simply-dev/eslint-utils": "workspace:*",
+    "eslint-plugin-security": "^2.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.56.0"
+  }
+}

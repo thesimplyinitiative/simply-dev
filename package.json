@@ -1,7 +1,8 @@
 {
   "name": "@simply-dev/root",
   "workspaces": [
-    "packages/**/*"
+    "packages/**",
+    "packages/eslint"
   ],
   "repository": "https://github.com/thesimplyinitiative/simply-dev",
   "version": "0.0.0",
@@ -30,8 +31,8 @@
     "@nrwl/js": "15.4.4",
     "@nrwl/linter": "15.4.4",
     "@nrwl/workspace": "15.4.4",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
     "commitizen": "^4.2.6",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
@@ -39,10 +40,10 @@
     "lint-staged": "^13.1.0",
     "nx": "15.4.4",
     "prettier": "^2.6.2",
-    "tslib": "^2.4.1",
-    "typescript": "~4.8.2"
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
   },
-  "packageManager": "yarn@3.3.1",
+  "packageManager": "yarn@4.0.2",
   "lint-staged": {
     "packages/**/*": [
       "nx affected:lint --fix --files",
@@ -50,9 +51,6 @@
     ],
     "*": [
       "nx format:write --files"
-    ],
-    "*.{ts,tsx}": [
-      "tsc --noEmit"
     ],
     "!(packages/**/*)*.{js,jsx,ts,tsx}": "eslint --cache --fix"
   },
